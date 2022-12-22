@@ -1,19 +1,26 @@
-// 8) Дан select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При ее нажатии срабатывает функция f8. Функция должна получить выбранное в select число, потом с помощью switch case сравнить его поочередно с ‘1’, ‘2’, ‘3’. И если число выбрано - 1, то вывести в out-8 строку one, если 2 - two, если 3 - three.
+// Создайте на странице input[type=number] с классом i-9, куда пользователь может ввести номер квартиры. Есть кнопка b-9 которая запускает функцию f9. Функция должна вывести в .out-9 номер подъезда, в котором находится квартира.
 
-function f8 () {
-    let a = +document.querySelector('.s-8').value;
-    let div = document.querySelector('.out-8');
+// если от 1 до 32 - то вывести цифру 1
+// если от 33 до 43 - то вывести 2
+// если от 44 до 64 - то 3.
+// В противном случае, вывести 0.
 
-    switch(a){
-    case 1:
-        div.innerHTML = 'one';
-        break;
-    case 2:
-        div.innerHTML = 'two';
-        break;
-    case 3:
-        div.innerHTML = 'three';
-        break;
-    }
+
+
+function f9 () {
+    let a = +document.querySelector('.i-9').value;
+    let div = document.querySelector('.out-9');
+if (a >= 1 && a <= 32) {
+    div.innerHTML = 1; 
 }
-document.querySelector('.b-8').onclick = f8;
+else if (a >= 33 && a <= 43){
+    div.innerHTML = 2;
+}
+else if (a >= 44 && a <= 64){
+    div.innerHTML = 3;
+}
+else {
+    div.innerHTML = 0;
+}
+}
+ document.querySelector('.b-9').onclick = f9;

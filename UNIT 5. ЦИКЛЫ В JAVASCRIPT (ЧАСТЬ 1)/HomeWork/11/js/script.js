@@ -8,35 +8,11 @@
 
 function t11() {
  let elem = document.querySelectorAll('.div-11');
-       console.log(elem);
-for (let i = 0; i < elem.length; i++){
-   console.log(elem[i].textContent);
+    console.log(elem);
+    for (let i = 0; i < elem.length; i++){
+    console.log(elem[i].textContent);
     document.querySelector(".out-11").innerHTML += elem[i].textContent + " ";
-}
+    }
 }
 
 document.querySelector('.b-11').onclick = t11;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  Task 10
-// Кнопка b-10 запускает функцию t10. Функция должна выводить в out-10 четные годы от 1950 до 2000 включительно.
-// Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
-
-// function t10() {
-//    for (let i = 1950; i <= 2000; i = i+2)
-//    document.querySelector(".out-10").innerHTML += i + " ";
-// }
-
-// document.querySelector('.b-10').onclick = t10;

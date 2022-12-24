@@ -11,13 +11,11 @@ function t5() {
    for( let i = 0; i < 3; i++){
       div.innerHTML += '<br>';
       for (let k = 0; k < 6; k++){
-         let m = 1;
-         let n = 0;
          if(k % 2 ==0) {
-            div.innerHTML += m;
+            div.innerHTML += 1;
          }
          else{
-            div.innerHTML += n;
+            div.innerHTML += 0;
          }
       }
    }

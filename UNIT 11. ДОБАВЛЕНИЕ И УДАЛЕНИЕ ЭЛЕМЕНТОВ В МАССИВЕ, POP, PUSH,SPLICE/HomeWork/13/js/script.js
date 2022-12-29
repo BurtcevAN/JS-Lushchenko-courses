@@ -13,18 +13,14 @@ function showArr (domElem, arr){
 }
 
 let d13 = [6, 0, 22, 1, 4, 76];
-let d14 = [];
-
 
 function f13() {
-    let j = d13.length-1;
     let d14 = [];
-    for (let i = 0; i < d13.length; i++){
-        d14[i] = d13[j];
-        j--;
-       
-    }
+    let j = 0;
+        for(i = d13.length-1; i >= 0; i--){
+        d14[j] = d13[i];
+        j++;
+        }
     showArr('.out-13', d14);
 }
-
 document.querySelector('.b-13').onclick = f13;

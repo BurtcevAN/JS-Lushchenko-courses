@@ -14,11 +14,10 @@ function showArr (domElem, arr){
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
-    for(let i = 0; i < d7.length; i++){
-        let f = d7[d7.length-1];
-        d7[d7.length-1] = '';
-        console.log(f);
-    }
+    let f = d7[d7.length-1];
+    // console.log(f);
+    d7.length = d7.length-1;
+    // console.log(d7);
 
     showArr('.out-7', d7);
 }
